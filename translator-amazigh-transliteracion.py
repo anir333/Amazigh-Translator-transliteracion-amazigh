@@ -3,6 +3,7 @@ abecedario = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', '
 tamazight = ['ⴰ', 'ⴱ', 'ⵛ', 'ⴷ', 'ⴻ', 'ⴼ', 'ⴳ', 'ⵀ', 'ⵉ', 'ⵊ', 'ⴽ', 'ⵍ', 'ⵎ', 'ⵏ', 'o', 'p', 'ⵇ', 'ⵔ', 'ⵙ', 'ⵟ', 'ⵓ', 'ⵠ', 'ⵡ', 'ⵅ', 'ⵢ', 'ⵣ']
 
 entered = input('Enter word or phrase: ')
+name = entered
 entered = entered.lower()
 entered = entered.split()
 final_entered = []
@@ -22,4 +23,4 @@ while i < len(entered):
     final_entered.append(final_word)
     i += 1
 
-print(" ".join(final_entered))
+print(" ".join(final_entered), "=>", name)
